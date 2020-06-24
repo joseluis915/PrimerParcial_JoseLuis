@@ -27,8 +27,8 @@ namespace PrimerParcial_JoseLuis.Migrations
                     b.Property<string>("Descripcion")
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("Existencia")
-                        .HasColumnType("REAL");
+                    b.Property<int>("Existencia")
+                        .HasColumnType("INTEGER");
 
                     b.Property<double>("ValorInventario")
                         .HasColumnType("REAL");

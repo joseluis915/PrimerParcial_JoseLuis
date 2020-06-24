@@ -45,11 +45,11 @@ namespace PrimerParcial_JoseLuis.UI.Registro
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
             var articulos = ArticulosBLL.Buscar(Utilidades.ToInt(IdArticuloTextbox.Text));
+
             if (articulos != null)
                 this.Articulos = articulos;
             else
-                MessageBox.Show("El registro no fue encontrado.\n\nIntente buscar un registro existente o Cree uno nuevo.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-            this.Articulos = new Articulos();
+                this.Articulos = new Articulos();
 
             this.DataContext = this.Articulos;
         }

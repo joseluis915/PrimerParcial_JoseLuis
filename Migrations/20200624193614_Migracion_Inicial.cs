@@ -13,7 +13,7 @@ namespace PrimerParcial_JoseLuis.Migrations
                     IdArticulo = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Descripcion = table.Column<string>(nullable: true),
-                    Existencia = table.Column<double>(nullable: false),
+                    Existencia = table.Column<int>(nullable: false),
                     Costo = table.Column<double>(nullable: false),
                     ValorInventario = table.Column<double>(nullable: false)
                 },
